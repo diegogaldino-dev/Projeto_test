@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End - Diego</title>
+</head>
+
+<body>
+    <section id="header">
+      <div class="image-area-area">
+        <img class="img-wrapper" src="images/hero/desktop/left-leaves.png" />
+        <img class="img-wrapper" src="images/hero/desktop/plantperson.png" />
+        <img class="img-wrapper" src="images/hero/desktop/right-leaves.png" />
+      </div>
+      <div class="image-mobile-area">
+        <img
+          class="img-wrapper-leaves"
+          src="images/hero/mobile/mobile-leaves.png"
+        />
+        <img
+          class="img-wrapper-person"
+          src="images/hero/mobile/mobile-plantperson.png"
+        />
+      </div>
+
+      <div class="logo-content">
+        <div class="container">
+          <img class="logo" src="images/icons/logo-white.svg" />
+          <h1 class="logo-text">Find your next green friend</h1>
+          <img
+            class="arrow-size"
+            src="images/icons/arrow-down.svg"
+            alt="Arrow down"
+          />
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="filters">
+        
+        <div class="container">
+            <form id="filterForm">
+                <div class="filter-modified">
+                    <div class="filter-area">
+                        <img class="filter-img" src="./images/illustrations/sun.png" alt="" />
+                        <span class="filter-text"><strong>1.</strong> Set the amount of
+                            <strong>sunlight</strong> your plant will get.</span>
+                        <select id="filterSunlight">
+                            <option value="" disabled selected hidden>Select...</option>
+                            <option value="no">No</option>
+                            <option value="low">Low</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-area">
+                        <img class="filter-img invert-img" src="./images/illustrations/wateringcan.png" alt="" />
+                        <span class="filter-text"><strong>2.</strong> How ofter do you want to
+                            <strong>water</strong> yout plant.
+                        </span>
+                        <select id="filterWater">
+                            <option value="" disabled selected hidden>Select...</option>
+                            <option value="regularly">Regularly</option>
+                            <option value="daily">Daily</option>
+                            <option value="rarely">Rarely</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-area">
+                        <img class="filter-img" src="./images/illustrations/dog.png" alt="" />
+                        <span class="filter-text"><strong>3.</strong> Do yout have pets? Do they
+                            <strong>chew</strong> plants?</span>
+                        <select id="filterPet">
+                            <option value="" disabled selected hidden>Select...</option>
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <section id="result">
+        <div class="container">
+            <div class="no-result">
+                <div id="generarNoResult"></div>
+                <img id="imageNoResults" src="./images/illustrations/no-results.png" alt="" />
+            </div>
+
+            <div class="result-content">
+                <div class="result-content-header">
+                    <img class="pick-img" src="./images/illustrations/pick.png" alt="" />
+                    <h1 class="pick-text">Our picks for you</h1>
+                </div>
+                <div class="result-content-body">
+                    <div id="generarResultContent"></div>
+                </div>
+            </div>
+
+            <div id="btnTop" class="btn-area">
+                <button class="btn">
+                    <img src="images/icons/arrow-up.svg" alt="" /> back to the top
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="overlay" class="overlay">
+        <div class="loader"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
